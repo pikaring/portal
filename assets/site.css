@@ -197,3 +197,81 @@ body {
   .card { transition: none; }
   .card:hover, .card:focus-visible { transform: none; }
 }
+
+
+/* ========== 開発の参考書 ========== */
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.book-group {
+  padding: 22px 20px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.book-group h3 {
+  margin: 0 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--line);
+  color: var(--ink);
+  font-size: 17px;
+}
+
+.book-group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.book-group li + li {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.book-group li > a {
+  display: inline-block;
+  padding: 2px 0;
+  color: var(--amber-dark);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.book-group li > a:hover { text-decoration: underline; }
+
+.book__meta,
+.book__note {
+  display: block;
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+
+.book__meta { color: var(--muted); }
+.book__note { margin-top: 2px; }
+
+.book-more {
+  margin: 16px 0 0;
+  font-size: 13.5px;
+}
+
+.book-more a {
+  display: inline-block;
+  padding: 8px 0;               /* 指で ふれやすい たかさ */
+  color: var(--amber-dark);
+  text-decoration: none;
+}
+
+.book-more a:hover { text-decoration: underline; }
+
+.books__note {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
