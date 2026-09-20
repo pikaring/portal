@@ -170,6 +170,12 @@ body {
 
 .foot p { margin: 0; }
 .foot__note { font-size: 14px; }
+.foot__disclosure {
+  margin: 20px auto 0;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #8b95a6;
+}
 
 .foot__link {
   display: inline-block;
