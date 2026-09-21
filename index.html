@@ -195,9 +195,23 @@
   <div class="wrap">
     <p class="foot__note">どれも MIT License です。不具合や要望は GitHub の Issue へ。</p>
     <p><a class="foot__link" href="https://github.com/pikaring">github.com/pikaring</a></p>
+    <p class="foot__counter">累計アクセス <b id="counter-value">―</b> 回</p>
     <p class="foot__disclosure">当サイトはAmazonアソシエイト・プログラムに参加しており、掲載しているリンクから商品が買われると運営者に紹介料が入る場合があります。</p>
   </div>
 </footer>
+
+<script>
+// アクセスカウンター（ほかのページと同じGAS。page名でサイトごとに別カウント）
+(function () {
+  var el = document.getElementById('counter-value');
+  if (!el) return;
+  var page = location.pathname.replace(/index\.html$/, '');
+  fetch('https://script.google.com/macros/s/AKfycbxkQLZXNAFXkT7zhIO0TmMDGU3A0TQ234Lf-yhw5J7lvFAjCi3KLNLRd_LKd_xlOxPd/exec?page=' + encodeURIComponent(page))
+    .then(function (r) { return r.json(); })
+    .then(function (d) { el.textContent = Number(d.count).toLocaleString('ja-JP'); })
+    .catch(function () { el.textContent = '―'; });
+})();
+</script>
 
 </body>
 </html>

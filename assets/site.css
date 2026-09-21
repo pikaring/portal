@@ -177,6 +177,15 @@ body {
   color: #8b95a6;
 }
 
+.foot__counter {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #8b95a6;
+  font-variant-numeric: tabular-nums;
+}
+
+.foot__counter b { font-weight: 600; color: #b8c1d1; }
+
 .foot__link {
   display: inline-block;
   margin-top: 10px;
