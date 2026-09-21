@@ -36,7 +36,7 @@ pikaring が公開しているツールとゲームの入口ページです。
 
 ## 掲載しているもの
 
-あそぶ: Tap on KOTOBA / ねこの ともだち / Reach on SANMA / All in TEXAS
+あそぶ: Tap on KOTOBA / ねこの ともだち / ねこを にがせ / Reach on SANMA / All in TEXAS
 つかう: Ride on QC / Eat on GPX / ROCK ON MJ
 
 ## GitHub Pages
