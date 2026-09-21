@@ -13,7 +13,8 @@ pikaring が公開しているツールとゲームの入口ページです。
 | --- | --- |
 | `index.html` | カードの一覧（アプリを増やすときはここだけ直す） |
 | `assets/site.css` | 各ツールの紹介ページと同じ配色・書体・角丸 |
-| `assets/icon.svg` | ファビコン |
+| `assets/icon.svg` | アイコンの元データ |
+| `assets/icon.png` / `assets/favicon.png` | OG画像・ホーム画面用（icon.svg から書き出し） |
 
 アクセスカウンターは ほかのツールと同じ GAS を使い、`?page=` にパス（`/portal/`）を
 渡してサイトごとに別々に数えています。通信できないときは「―」のまま表示されます。
